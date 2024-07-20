@@ -1,0 +1,102 @@
+@import url(https://fonts.google.com/specimen/Inter);
+
+:root {
+    --ff: "Inter", sans-serif;
+
+    --Green: hsl(75, 94%, 57%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--Grey-900);
+    font-family: var(--ff);
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    gap: 2rem;
+
+    color: var(--White);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+    background-color: var(--Grey-800);
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+}
+
+img {
+    max-width: 6rem;
+    border-radius: 100%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.profile h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.profile .location {
+    color: var(--Green);
+    opacity: .8;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.bibliography {
+    color: var(--White);
+    font-weight: 400;
+    opacity: .7;
+    font-size: .9rem;
+    min-width: 120%;
+}
+
+.card .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    min-width: 120%;
+    list-style: none;
+}
+
+.card a {
+    color: var(--White);
+    text-decoration: none;
+    padding: 1rem;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: .5rem;
+    background-color: var(--Grey-700);
+    transition-duration: .3s;
+}
+
+.card a:hover {
+    color: var(--Grey-700);
+    background-color: var(--Green);
+    transition-duration: .4s;
+}
